@@ -1,0 +1,71 @@
+.box{
+    width:100px;
+    height:100px;
+
+}
+/* .static{
+    position: static;
+    background-color: red;
+    top:100px;
+}
+.relative{
+    position: relative;
+    background-color: blue;
+    left:100px;
+    top:100px;
+} */
+
+.content{
+  position: absolute;
+
+
+}
+
+.parent{
+    position:absolute;
+    width: 400px;
+    background-color: blueviolet;
+    height: 200px;
+    /* left:200px;
+    top: 100px; */
+    top: 100px ;
+}
+.card{
+    background-color: royalblue;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+
+}
+.unique1{
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+}
+.unique2{
+    background-color: blue;
+    position: absolute;
+    left:20px;
+    z-index: 3;
+}
+.unique3{
+    background-color: green;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}

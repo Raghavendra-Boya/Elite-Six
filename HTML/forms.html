@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--
+    WHat is form:
+A form is an HTML element that allows users to input data and submit it to a server for processing. Forms are commonly used for tasks such as user registration, login, search, and feedback submission. A form typically consists of various input elements such as text fields, checkboxes, radio buttons, dropdown menus, and buttons.
+
+types forms:
+1. application form
+2. registration form
+3. login form
+4. contact form
+5. feedback form
+    
+
+form syntax:
+<form action="URL" method="GET/POST">
+    form elements go here
+</form>
+    
+types of inputs:
+1. text input: <input type="text" name="username">
+    -->
+
+<form action="#" method="get">
+<fieldset>
+    <legend>Personal Info</legend>
+    <!-- <label for="name">Name:</label> -->
+    <input type="text" id="name" placeholder="Eneter Your Name" name="UserName" autocomplete="off" required value="Raghavendra" readonly disabled>
+    <input type="email" placeholder="Enter Email" name="UserEmail">
+    <input type="password" minlength="6">
+    <input type="number" name="" id="" placeholder="Eneter a Number">
+    <input type="tel" placeholder="Enter Phone Number"  maxlength="10">
+    <input type="url">
+
+
+    
+</fieldset>
+
+<fieldset>
+    <legend>Date & Time</legend>
+
+
+    <input type="date">
+    <input type="time">
+    <input type="datetime-local">
+    <input type="month">
+    <input type="week">
+
+</fieldset>
+
+<fieldset>
+    <legend>Other Inputs</legend>
+
+    <input type="color">
+    <input type="range" min="0" max="100">
+    <input type="search" placeholder="Search Here...">
+    <input type="file" accept=".pdf,.doc">
+</fieldset>
+
+<fieldset>
+    <legend>Preferences</legend>
+    <label for="">Gender:</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+
+    <label for="">Hobbies:</label>
+    <input type="checkbox" name="hobbies" id="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" name="hobbies" id="traveling">
+    <label for="traveling">Traveling</label>
+    <input type="checkbox" name="hobbies" id="cooking" >
+    <label for="cooking">Cooking</label>
+
+
+    <label for="option">Country</label>
+    <select name="option" id="">
+        <option value="">---Select---</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+</fieldset>
+
+
+<input type="hidden">
+
+
+<input type="button" value="Click Me">
+<input type="reset" value="Reset">
+<!-- <button>Submit</button> -->
+
+
+<input type="image" src="../assets/logo.jpg" alt="Submit" width="100px" height="50px">
+<img src="../assets/logo.jpg" alt="">
+
+<textarea name="" id="" maxlength="20"></textarea>
+</form>
+    
+</body>
+</html>

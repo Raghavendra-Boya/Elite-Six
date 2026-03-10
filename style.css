@@ -1,0 +1,44 @@
+.banner{
+    width: 100%;
+   
+}
+
+.banner img{
+    width: 100%;
+     
+    
+}
+.banner h2{
+    position: relative;
+    bottom: 180px;
+    left: 300px;
+    color: rgb(92, 9, 9);
+}
+
+.card{
+    width:250px;
+    height: 300px;
+    position: relative;
+    left: 300px;
+    background-color: rgb(255, 0, 0);
+    
+
+}
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#demo {
+  color:red;
+}
+
+.p {
+  color:blue;
+}
+

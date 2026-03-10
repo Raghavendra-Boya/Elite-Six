@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    
+    What is multimedia:
+Multimedia refers to the integration of various forms of media, such as text, images, audio, video, and interactive content, to create a rich and engaging user experience. It combines different types of media to convey information or entertainment in a more dynamic and interactive way.
+
+Types of multimedia:
+1. img: The <img> tag is used to embed images in a web page. It requires the src attribute to specify the image source and can also include attributes like alt for alternative text and width/height for sizing.
+src: This attribute specifies the URL of the image to be displayed. It can be a relative or absolute path to the image file.
+alt: This attribute provides alternative text for the image, which is displayed if the image cannot be loaded. It is also used by screen readers for accessibility purposes.
+loading: This attribute specifies how the image should be loaded. It can take values like "lazy" for lazy loading, which defers the loading of the image until it is needed, improving page performance.
+width and height: These attributes specify the dimensions of the image in pixels. They can be used to control the size of the image on the web page.
+
+2. audio: The <audio> tag is used to embed audio content in a web page. It requires the src attribute to specify the audio source and can include attributes like controls for displaying playback controls.
+src: This attribute specifies the URL of the audio file to be played. It can be a relative or absolute path to the audio file.
+controls: This attribute adds playback controls to the audio player, allowing users to play, pause, and adjust the volume of the audio.
+   
+3. video: The <video> tag is used to embed video content in a web page. It requires the src attribute to specify the video source and can include attributes like controls for displaying playback controls.
+src: This attribute specifies the URL of the video file to be played. It can be a relative or absolute path to the video file.
+controls: This attribute adds playback controls to the video player, allowing users to play, pause, and adjust the volume of the video.
+
+poster: This attribute specifies an image to be displayed as a placeholder before the video is played. It can be a relative or absolute path to the image file.
+
+4. iframe: The <iframe> tag is used to embed another HTML document within the current document. It requires the src attribute to specify the URL of the embedded document and can include attributes like frameborder for controlling the border around the iframe.
+src: This attribute specifies the URL of the document to be embedded within the iframe. It can be a relative or absolute path to the document.
+frameborder: This attribute specifies whether to display a border around the iframe. It can take values like "0" for no border and "1" for a border.
+
+
+
+-->
+
+    <img src="../assets/logo.jpg" alt="header-logo" style="width: 20%;" loading="lazy">
+    <audio src="../assets/nokia-tune.mp3" controls muted autoplay style="width:40%"></audio>
+    <video src="../JS/Nature-Video.mp4" controls muted style="width:40%" poster="../assets/logo.jpg"></video>
+
+    <iframe src="./home.html" frameborder="1" width="50%" height="300px" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    
+    
+</body>
+</html>

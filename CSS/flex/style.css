@@ -1,0 +1,74 @@
+/*
+What is Flex:
+1. flex is one dimentional layout model
+2. It is used to design a layout structure without using float or positioning.
+
+use cases:
+1. arrange the cards on application
+2, create the nav bars
+3. create the responsive design
+
+
+flex:
+1. flex container:
+    display: flex;---->item will arrange in a row
+    flex-wrap: wrap|no-wrap;--->by default it is no-wrap
+    flex-direction: row|column|row-reverse|column-reverse;
+    justify-content: flex-start|flex-end|center|space-between|space-around;
+    align-items: flex-start|flex-end|center|stretch|baseline;
+    gap: 10px;--->it is used to give the gap between the flex items
+
+
+2. flex items
+    flex-grow: 1;--->it is used to make the item grow to fill the available space
+    flex-shrink: 1;--->it is used to make the item shrink to fit the available space
+    flex-basis: 100px;--->it is used to set the initial size of the item before it grows or shrinks
+    order: 1;--->it is used to change the order of the items in the flex container
+
+
+*/
+
+.box{
+width: 200px;
+height: 100px;
+text-align: center;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container{
+display: flex;
+/* flex-wrap: wrap; */
+/* flex-direction: row-reverse; */
+/* justify-content: space-evenly; */
+background-color: aqua;
+height: 300px;
+align-items: center;
+gap:10px 40px;
+/* column-gap: 20px;
+row-gap: 50px; */
+}
+
+.box1{
+    background-color: red;
+    flex-grow: 3;
+    flex-shrink: 1;
+     flex-basis: 200px;
+        order: 2;
+}
+.box2{
+    background-color: blue;
+     flex-grow: 2;
+     flex-shrink: 5;
+     flex-basis: 200px;
+     order: 0;
+}
+.box3{
+    background-color: green;
+     flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 200px;
+    order: 1;
+}

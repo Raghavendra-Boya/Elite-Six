@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+    <!--
+    What is Selectors:
+    Selectors are used to select the HTML elements based on their id, class, type, attributes, values of attributes, etc. and apply styles to them.
+    Types of Selectors:
+    1. Universal Selector (*)
+    syntax:
+    * {
+        property: value;
+    }
+    
+    what does it do:
+    The universal selector (*) selects all the elements in the document and applies the specified styles to them. It is often used to reset or normalize styles across different browsers by setting margin, padding, and other properties to a consistent value for all elements.
+
+    usecases:
+    1. reset default styles: The universal selector is commonly used to reset default styles of all elements to ensure consistency across different browsers. For example:
+    
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    2. element(Tag) selector(tag name):
+    the element selector is used to select all the elements of a specific type and apply styles to them. For example:
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+
+    usecases:
+    1. styling specific elements: The element selector is commonly used to style specific HTML elements, such as headings, paragraphs, links, etc. For example:
+    p {
+        color: green;
+        font-size: 16px;
+    }
+
+    3. class selector(.):\
+    the class selector is used to select all the elements that have a specific class attribute and apply styles to them. For example:
+    .my-class {
+        color: red;
+        font-size: 18px;
+    }
+        className = "classValue"
+
+    usecases:
+    1. styling multiple elements: The class selector is commonly used to style multiple elements that share the same class attribute. For example:
+    .highlight {
+        background-color: yellow;
+    }
+    
+    4. id selector(#):
+    the id selector is used to select a single element that has a specific id attribute and apply styles to it. For example:
+    #my-id {
+        color: purple;
+        font-size: 20px;
+    }
+        id = "idValue"
+
+5. group selector(,)
+the group selector is used to select multiple elements and apply the same styles to them. For example:
+h1, p {
+    color: orange;
+    font-family: Arial, sans-serif;
+}
+    6. pseudo-class selector(:)
+the pseudo-class selector is used to select elements based on their state or position in the document. For example:
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+    :hover is a pseudo-class that applies styles to an element when the user hovers over it with the mouse pointer.
+    :focus is a pseudo-class that applies styles to an element when it receives focus, such as when a user clicks on an input field or navigates to it using the keyboard.
+    :first-child is a pseudo-class that selects the first child element of a parent element. For example:
+ul li:first-child {
+    font-weight: bold;
+}
+
+7. pseudo-element selector(::)
+the pseudo-element selector is used to style specific parts of an element, such as the first letter, first line, or before and after the content of an element. For example:
+p::first-letter {
+    font-size: 200%;
+    color: red;
+}
+    The ::first-letter pseudo-element selects the first letter of a paragraph and applies the specified styles
+
+
+8. combinator selector:
+the combinator selector is used to select elements based on their relationship with other elements in the document. There are four types of combinators:
+child selectors,
+    1. direct child selector (>)
+    2. descendant selector (space)
+sibling selectors\
+    3. adjacent sibling selector (+)
+    4. general sibling selector (~)
+    -->
+
+    <h1 class="heading">Heading-1</h1>
+    <p>This is a paragraph.</p>
+    <div>This is Div</div>
+    <h1 class="heading">Heading-2</h1>
+    <h1 class="heading">Heading-3</h1>
+      <h1>Heading-3</h1>
+        <h1>Heading-3</h1>
+
+
+        <span id="id">Span-1</span>
+        <span id="id1">Span-2</span>
+        <span id="id">Span-3</span>
+
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing <span class="elit">elit</span>. Ex, expedita.</p>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing <p class="elit">elit</p>. Ex, expedita.</span>
+
+    
+
+
+        <a href="">Clicck me</a>
+       <span>Span tag</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus itaque eaque sapiente iste cumque totam voluptatum nulla facere quasi! Ipsa quam vitae quasi sunt fugit aut eligendi libero est voluptates.</p>
+
+        <div style="width: 500px; height: 300px; background-color: lightcoral;">
+
+            <button class="btn">Button</button>
+        </div>
+        <!-- <input type="button" value="Submit"> -->
+         <input type="text">
+
+
+
+         <ul>
+            <li>List1
+            </li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+            <li>List5</li>
+         </ul>
+
+
+         <div class="div">
+            <span>SPan-1</span>
+            <p>Para-1</p>
+            <p>Para-2</p>
+            <span>SPan-1</span>
+            <div>
+                 <span>SPan-1</span>
+                <p>Para-3</p>
+                <p>Para-4</p>
+                <span>SPan-2</span>
+            </div>
+         </div>
+          <p>Para-5</p>
+                <p>Para-6</p>
+                <span>SPan-3</span>
+    <script src="./script.js"></script>
+
+<!--
+    
+<div>
+  <p>First</p>
+  <p>Second</p>
+</div>
+
+
+div p {
+  color: red;
+}
+
+
+<div>
+  <p>First</p>
+  <section>
+    <p>Second</p>
+  </section>
+</div>
+
+div > p {
+  color: blue;
+}
+
+<h2>Title</h2>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+
+h2 + p {
+  color: green;
+}
+
+
+<h2>Title</h2>
+<p>Para 1</p>
+<p>Para 2</p>
+<p>Para 3</p>
+
+
+h2 ~ p {
+  color: orange;
+}
+
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>4</li>
+</ul>
+
+ul li:first-child {
+  color: red;
+}
+
+
+<div>
+  <span>Span</span>
+  <p>Para</p>
+   <p>Para</p>
+</div>
+
+p:first-child {
+  color: red;
+}
+
+<ul>
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+</ul>
+
+li:nth-child(2) {
+  color: green;
+}
+
+
+<div>
+    <p id="text" class="para">Hello</p>
+</div>
+
+
+
+
+div p { color: red; }
+p { color: blue; }
+-->
+
+<div>
+  <span>Span</span>
+  <p>Para</p>
+   <p>Para</p>
+   <span>spannnnnn</span>
+</div>
+
+<div>
+    <p id="text" class="para">Hello</p>
+</div>
+
+<p id="text" class="para">Hello</p>
+</body>
+</html>
