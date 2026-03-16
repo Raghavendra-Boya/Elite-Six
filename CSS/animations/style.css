@@ -1,0 +1,85 @@
+/*
+WHat transition
+
+alllows you to chnage the state smoothly over specific duration
+
+transition property: defins the css prop[erty should animate(width,bg,hieght,color)
+transition-duration:
+transtion-timing-function:(ease-in,ease-out,ease,easein-out,linear)
+transitions-delay:second
+transition: propert dutation timing-funtion dealy;
+
+
+
+@keyframes animationname{
+from{
+transform:translateX(0)
+}
+to{
+transform:translateX(100px)
+}
+}
+
+
+0%{
+}
+25%{
+}
+50%{
+
+
+*/
+.box{
+    background-color: red;
+    /* transition-duration: 2s; */
+    /* transition-delay: 3s; */
+    transition:  ease;
+    width:100px;
+    height: 100px;
+    animation-name: square;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    /* animation-delay: 3s; */
+    animation-timing-function: ease-in;
+}
+/* .box:hover{
+    background-color: green;
+
+} */
+@keyframes square{
+    0%{
+       transform: translate(0,0); 
+    }
+    25%{
+          transform: translate(200px,0);
+    }
+    50%{
+          transform: translate(200px,200px);
+    }
+    75%{
+          transform: translate(0,200px);
+    }
+    100%{
+          transform: translate(0,0);
+    }
+}
+
+.loader{
+    width: 60px;
+    height: 60px;
+  
+    border: 6px solid blue;
+      border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+     100%{
+        transform: rotate(360deg);
+    }
+}

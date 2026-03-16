@@ -1,3 +1,33 @@
-a{
-    color:red
+.box{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+    
+}
+
+.box:hover{
+    /* transform: translateY(100px) */
+  
+    /* transform: rotate(30deg);
+      transform: scale(1.1); */
+    /* transition-duration: 1s; */
+    /* transform: skewY(90deg); */
+    transform:  rotate(30deg) scale(1.5);
+
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    
+
+}
+.card img{
+    width: 100%;
+    height: 100%;
+  
+}
+img:hover{
+    transform:scale(1.8)
 }

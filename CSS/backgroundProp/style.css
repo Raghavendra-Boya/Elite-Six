@@ -1,0 +1,50 @@
+/*
+WHat is background in CSS:
+BG properties are used to control the bg appearance of a an elemet
+
+we can add:
+1. color
+2. images
+3. gradients
+4. size
+5. repeat behaviour
+6. positions
+7. multiple layers
+
+why:
+1. Hero sections
+2. cards
+3. Buttons
+4. image overlays
+
+
+
+
+props:
+1. background-color:
+2. background-image:url("path")
+
+*/
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url("");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    /* background-position: 0% 50%; */
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.5;
+
+    background: color image repet position/size attachment;
+
+
+}
+.second_div{
+    width: 100%;
+    height: 500px;
+    background: #57C785;
+}
