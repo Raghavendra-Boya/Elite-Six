@@ -1,0 +1,96 @@
+/*
+Media QUeries are used to make webpages resposive
+
+tyhey allow you to apply CSS styles based on the Screen Size
+
+
+whithout media Queries:
+1. website looks good only in the desktop
+2. layout breaks 
+3. poor UX
+
+
+with::after
+1. Resonsive design
+2. mobile friedly UI
+3. Better USer Experience
+
+Synatax:
+@media (condition and condtion){
+//css styles
+}
+
+1. Desktop max-width : 1440px and min-width: 1025px
+2. laptop max-width: 1024px and min-width 769px
+3. tablet max-width 768px and min-width 426px
+4. mobile max-with 425px
+
+*/
+
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.header_logo{
+    width: 20%;
+}
+.header_logo img{
+    width: 100%;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-evenly;
+    width:80%
+}
+.navlinks a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+    .header{
+        flex-direction: column;
+        background-color: aqua;
+    }
+    .header-logo{
+        width: 50%;
+    }
+    .navlinks{
+        flex-direction: column;
+        align-items: center;
+        background-color: blueviolet;
+        width:100%;
+    }
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    /* width: 100%; */
+    flex: 1 1 30%;
+    margin: 10px;
+}
+.image img{
+    width: 100%;
+}
+
+.price{
+    display: flex;
+   justify-content: space-between;
+}
+.anchor{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .container{
+        flex: 1 1 45%;
+        background-color: aquamarine;
+        border: 2px solid red;
+    }
+}
